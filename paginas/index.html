@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
     <title>Igreja Quadrangular</title>
 </head>
 <body>
@@ -12,10 +13,10 @@
             <a href="index.html">Página Inicial</a>
             <a href="ministerios.html">Ministérios</a>
             <a href="comunicados.html">Comunicados</a>
-            <a href="historia.html">Quem Somos</a>
+            <a href="historia.html">Nossa História</a>
         </nav>
     </header>
-    <main>
+    <main class="inicial">
         <h2>Igreja Quadrangular</h2>
         <section class="boas-vindas">
             <img src="../media/imagens/igreja.png" alt="Imagem da Igreja">
@@ -25,23 +26,61 @@
             <p>“Portanto, acolhei-vos uns aos outros, como também Cristo nos acolheu, para glória de Deus.” — Romanos 15:7</p>
             <p>Que Deus te abençoe infinitamente!</p>
         </section>
-        <section class="localização">
+        <section class="localizacao">
             <h2>Nossa Localização</h2>
             <p>Estamos localizados na Vila Militar 1 do município de Piraquara</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.4188259270886!2d-49.08619378987087!3d-25.424257577471845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dced810bd07d9f%3A0xeea4ca96cbef754!2sR.%20Cap.%20Carlos%20Henrique%20de%20Castro%20-%20Vila%20Militar%20I%2C%20Piraquara%20-%20PR%2C%2083303-270!5e0!3m2!1spt-BR!2sbr!4v1747780926525!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
         </section>
         <section class="oracao">
-            <h2>Faça um pedido de oração</h2>
+            <h2>Tire uma dúvida, faça uma sugestão ou um pedido de oração</h2>
             <form>
                 <label for="nome">Nome: </label>
-                <input type="text" id="nome" class="oracao">
+                <input type="text" id="nome" class="input-padrao">
 
-                <label for="pedido">Peça Sua Oração: </label>
+                <label for="pedido">Envie sua mensagem: </label>
                 <textarea id="pedido" class="oracao" cols="70" rows="10" required"></textarea>
 
-                <input type="button" value="Enviar" class="oracao">
+                <input type="button" value="Enviar" class="enviar">
             </form>
         </section>
     </main>
+    <footer>
+        <section class="horarios">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Culto</th>
+                        <td>Domingos</td>
+                        <td>19h</td>
+                    </tr>
+                    <tr>
+                        <th>Células</th>
+                        <td>Terças-Feiras</td>
+                        <td>20h</td>
+                    </tr>
+                    <tr>
+                        <th>Célula Homens</th>
+                        <td>Quartas-Feiras</td>
+                        <td>20h</td>
+                    </tr>
+                    <tr>
+                        <th>Culto</th>
+                        <td>Quintas-Feiras</td>
+                        <td>20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="insta">
+            <a href="#"><img src="../media/imagens/insta.png" alt="Logo Instagram"><span>Nosso Insta</span></a>
+        </section>
+    </footer>
 </body>
 </html>
